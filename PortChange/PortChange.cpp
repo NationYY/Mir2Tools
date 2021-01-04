@@ -177,31 +177,25 @@ int _tmain(int argc, _TCHAR* argv[])
 	WriteIniFile("SelGate\\Config.ini", "SelGate", "GatePort", "%d", nPort4+nZone-1);
 	WriteIniFile("SelGate\\Config.ini", "SelGate", "ServerPort", "%d", nPort6+nZone-1);
 	WriteIniFile("SelGate\\Config.ini", "SelGate", "LsvServerPort", "%d", nPort14+nZone-1);
-
-
 	WriteIniFile("Config.ini", "GameConf", "GameDirectory", "%s\\", szServerPath);
 	WriteIniFile("Config.ini", "GameConf", "GameName", "%s", szServerName);
 	WriteIniFile("Config.ini", "GameConf", "ExtIPaddr", "%s", szIP);
-
 	WriteIniFile("Config.ini", "M2Server", "GatePort", "%d", nPort17+nZone-1);
 	WriteIniFile("Config.ini", "M2Server", "MsgSrvPort", "%d", nPort16+nZone-1);
-
 	WriteIniFile("Config.ini", "RunGate", "GatePort1", "%d", nPort1+nZone-1);
 	WriteIniFile("Config.ini", "RunGate", "GatePort2", "%d", nPort2+nZone-1);
 	WriteIniFile("Config.ini", "RunGate", "GatePort3", "%d", nPort3+nZone-1);
-
 	WriteIniFile("Config.ini", "LoginGate", "GatePort", "%d", nPort9+nZone-1);
 	WriteIniFile("Config.ini", "LoginGate", "GatePort1", "%d", nPort10+nZone-1);
-	
 	WriteIniFile("Config.ini", "SelGate", "GatePort", "%d", nPort4+nZone-1);
-
 	WriteIniFile("Config.ini", "LoginServer", "GatePort", "%d", nPort8+nZone-1);
 	WriteIniFile("Config.ini", "LoginServer", "ServerPort", "%d", nPort7+nZone-1);
 	WriteIniFile("Config.ini", "LoginServer", "MonPort", "%d", nPort11+nZone-1);
 	WriteIniFile("Config.ini", "LoginServer", "RunPort", "%d", nPort14+nZone-1);
-
 	WriteIniFile("Config.ini", "DBServer", "GatePort", "%d", nPort6+nZone-1);
 	WriteIniFile("Config.ini", "DBServer", "ServerPort", "%d", nPort10+nZone-1);
+	//ini 修改其余值
+	WriteIniFile("Config.ini", "RunGate", "Count", "3");
 	std::cout<<"处理完毕!"<<std::endl;
 	system("pause");
 	return 0;
